@@ -1,0 +1,5 @@
+#!bin/bah
+(sed s/$1/$1/ animals.txt) >lewisanimals2.txt
+(sed s/$1// lewisanimals2.txt) >lewisanimals3.txt
+(sed /^$/d lewisanimals3.txt) >animals.txt
+exit
